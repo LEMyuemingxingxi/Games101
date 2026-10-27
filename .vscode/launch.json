@@ -1,0 +1,10 @@
+{
+ "version":"0.2.0",
+ "configurations":[{
+  "name":"GAMES101: debug Assignment1","type":"cppdbg","request":"launch",
+  "program":"${workspaceFolder}/Homework1/Assignment1/build/Rasterizer.exe",
+  "args":[],"cwd":"${workspaceFolder}/Homework1/Assignment1","externalConsole":false,
+  "MIMode":"gdb","miDebuggerPath":"C:/Users/Administrator/AppData/Local/Programs/cpp-toolchain/w64devkit/bin/gdb.exe",
+  "preLaunchTask":"GAMES101: build"
+ }]
+}

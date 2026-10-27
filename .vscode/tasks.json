@@ -1,0 +1,8 @@
+{
+ "version":"2.0.0",
+ "tasks":[
+  {"label":"GAMES101: configure","type":"process","command":"cmake","args":["--preset","windows-gcc"],"options":{"cwd":"${workspaceFolder}/Homework1/Assignment1"},"problemMatcher":[]},
+  {"label":"GAMES101: build","type":"process","command":"cmake","args":["--build","--preset","windows-gcc"],"options":{"cwd":"${workspaceFolder}/Homework1/Assignment1"},"dependsOn":"GAMES101: configure","problemMatcher":["$gcc"],"group":{"kind":"build","isDefault":true}},
+  {"label":"GAMES101: run","type":"process","command":"${workspaceFolder}/Homework1/Assignment1/build/Rasterizer.exe","options":{"cwd":"${workspaceFolder}/Homework1/Assignment1"},"dependsOn":"GAMES101: build","problemMatcher":[]}
+ ]
+}

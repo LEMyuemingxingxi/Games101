@@ -1,0 +1,16 @@
+.deps/
+**/build/
+output.png
+image.png
+
+# Course handouts and original download archives
+*.pdf
+*.zip
+
+# Compiled binaries
+*.exe
+*.obj
+*.o
+*.a
+*.dll
+.DS_Store

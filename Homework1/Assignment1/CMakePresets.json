@@ -1,0 +1,26 @@
+{
+    "version":  3,
+    "configurePresets":  [
+                             {
+                                 "name":  "windows-gcc",
+                                 "displayName":  "GAMES101 Windows GCC",
+                                 "generator":  "Ninja",
+                                 "binaryDir":  "${sourceDir}/build",
+                                 "cacheVariables":  {
+                                                        "CMAKE_BUILD_TYPE":  "Debug",
+                                                        "CMAKE_C_COMPILER":  "gcc",
+                                                        "CMAKE_CXX_COMPILER":  "g++",
+                                                        "CMAKE_EXPORT_COMPILE_COMMANDS":  "ON",
+                                                        "CMAKE_PREFIX_PATH":  "${sourceDir}/../../.deps/install",
+                                                        "OpenCV_STATIC":  "ON"
+                                                    }
+                             }
+                         ],
+    "buildPresets":  [
+                         {
+                             "name":  "windows-gcc",
+                             "configurePreset":  "windows-gcc",
+                             "jobs":  6
+                         }
+                     ]
+}
