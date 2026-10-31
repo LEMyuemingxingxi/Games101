@@ -10,6 +10,7 @@ image.png
 # Compiled binaries
 *.exe
 *.obj
+!Homework3/Assignment3/models/**/*.obj
 *.o
 *.a
 *.dll
